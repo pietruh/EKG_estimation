@@ -35,7 +35,7 @@ if __name__ == "__main__":
     delim = ";"
 
     with open(file_path, 'w+') as f:
-        for i in range(217,771):#164):
+        for i in range(332,771):#164):
             print(i)
             URL = 'https://prog.nfz.gov.pl/app-jgp/AnalizaPrzekrojowaSzczegoly.aspx?id='+str(i)
             soup = BeautifulSoup(urlopen(URL))
