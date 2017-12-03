@@ -1,0 +1,3 @@
+Please pass proper directories path in the .bat file
+PATH_LOG = C:\Users\HS_MichalP\Documents\Mike_priv\ECG_estimation_repo\EKG_estimation\logs 
+
