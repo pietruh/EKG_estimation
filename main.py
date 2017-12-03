@@ -78,3 +78,5 @@ if __name__ == "__main__":
                     print("Przerwa techniczna")
 
 print('Program finished')
+
+print("bananas")
