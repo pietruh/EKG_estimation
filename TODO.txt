@@ -1,0 +1,8 @@
+Wykresy popularnosci ekg (A-Z z kodów)
+
+Wyniki roczne
+Przewidywania roczne regresja liniowa (wytlumaczaenie, uzasadnienie, wynik dopasowannia R^2, sredni blad kwadratowy, confidence interval)
+
+
+attached code
+code description

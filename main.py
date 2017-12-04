@@ -35,11 +35,11 @@ if __name__ == "__main__":
     delim = ";"
 
     with open(file_path, 'w+') as f:
-        for i in range(214,771):#164):
+        for i in range(332,771):#164):
             print(i)
             URL = 'https://prog.nfz.gov.pl/app-jgp/AnalizaPrzekrojowaSzczegoly.aspx?id='+str(i)
             soup = BeautifulSoup(urlopen(URL))
-            year = 2016 - len(soup.find_all('a')) + 1
+            #year = 2016 - len(soup.find_all('a')) + 1
             for link in soup.find_all('a'):
                 #print(link.get('href'))
                 URL_link = link.get('href')
@@ -49,6 +49,7 @@ if __name__ == "__main__":
                 j = 3
 
                 try:
+                    year = a[0].contents[1].contents[1].contents[1].string[5:]
                     kod = a[0].contents[1].contents[1].contents[5].string[0:3]
                     opis_kodu = a[0].contents[1].contents[1].contents[5].string[6:]
                     kod_lb_hospitalizacji = a[1].contents[7].contents[3].string
@@ -73,9 +74,9 @@ if __name__ == "__main__":
 
                                 #print(year, kod, opis_kodu, kod_lb_hospitalizacji, zabieg_nazwa, zabieg_lb_hospitalizacji)
                                     j += 2
-                            year +=1
                 except:
                     print("Przerwa techniczna")
+                #year +=1
 
 print('Program finished')
 
